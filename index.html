@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog académico sobre obtención, análisis, especificación y validación de requisitos: su interacción, secuencialidad y aplicación en una biblioteca.">
+    <meta name="theme-color" content="#163d39">
+    <title>
+      Los Requerimientos en Ingeniería de Software
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body id="inicio">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="masthead">
+      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">R.</span> Unidad 2 Actividad 1</a>
+      <span class="edition">INFORMÁTICA VII · Unidad 2 Actividad 1</span>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" aria-labelledby="titulo">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            INGENIERÍA DE REQUISITOS · BLOG ACADÉMICO
+          </p>
+
+          <h1 id="titulo">
+            Los Requerimientos en Ingeniería de Software
+          </h1>
+
+          <p class="standfirst">
+          Todo lo que un sistema necesita 
+          </p>
+          <a class="button" href="#proceso">Explorar el proceso
+          <span aria-hidden="true">↗</span></a>
+          <p class="hero-meta">
+            Unidad 2 · Software &nbsp; / &nbsp; Actividad 1
+          </p>
+        </div>
+
+        <div class="hero-art" aria-label="Necesidad, diálogo, requisito y evidencia forman un ciclo de aprendizaje">
+          <span class="art-label">DEL PROBLEMA A LA EVIDENCIA</span>
+          <div class="orbit">
+            <div class="core">
+              Comprender<br>
+              <em>antes de construir.</em>
+            </div>
+            <span class="node n1">01 · Necesidad</span>
+            <span class="node n2">02
+            · Diálogo</span>
+            <span class="node n3">03 ·
+            Requisito</span>
+            <span class="node n4">04 · Evidencia</span>
+          </div>
+
+          <p>
+            Descubrir → acordar → comprobar ↺
+          </p>
+        </div>
+      </section>
+
+      <section class="cover" aria-label="Carátula académica">
+        <div>
+          <span class="label">ESTUDIANTE</span>
+          <strong>Mario Uriel López Cruz</strong>
+        </div>
+
+        <div>
+          <span class="label">ASIGNATURA</span>
+          <strong>Informática VII<br>
+          (Ingeniería de Software)</strong>
+        </div>
+
+        <div>
+          <span class="label">DOCENTE</span>
+          <strong>Eva Luz Zapata
+          Nava</strong>
+        </div>
+
+        <div>
+          <span class="label">GRUPO Y SEMESTRE</span>
+          <strong>9796 ·
+          2027-1</strong>
+        </div>
+
+        <p>
+          Universidad Nacional Autónoma de México · Facultad de Contaduría y
+          Administración · SUAyED<br>
+          <time datetime="2026-11-17">17 de noviembre de 2026</time>
+        </p>
+      </section>
+
+      <div class="reading-layout">
+        <aside class="toc">
+          <p class="eyebrow">
+            EN ESTA LECTURA
+          </p>
+
+          <nav aria-label="Índice del artículo">
+            <a href="#introduccion">01 / Punto de partida</a>
+            <a href="#conceptos">02 / Conceptos esenciales</a>
+            <a href="#proceso">03 /
+            El proceso</a>
+            <a href="#tecnicas">04 / Técnicas de
+            obtención</a>
+            <a href="#interaccion">05 / Interacción y
+            secuencia</a>
+            <a href="#ejemplo">06 / Caso práctico</a>
+            <a href="#calidad">07 / Calidad del requisito</a>
+            <a href="#conclusiones">08
+            / Conclusiones y expectativas</a>
+            <a href="#referencias">09 /
+            Referencias</a>
+          </nav>
+
+          <p class="aside-note">
+            Idea central<br>
+            <strong>Los requisitos se refinan mediante acuerdos y
+            evidencia.</strong>
+          </p>
+          <button class="print-button" type="button" hidden>Imprimir lectura
+          ↗</button>
+        </aside>
+
+        <article>
+          <section id="introduccion">
+            <p class="section-number">
+              01 / PUNTO DE PARTIDA
+            </p>
+
+            <h2>
+              Antes del código, el problema.
+            </h2>
+
+            <p>
+              Un sistema puede funcionar sin resolver la necesidad que motivó
+              su construcción. Por ejemplo, un catálogo digital puede mostrar
+              cientos de libros y, aun así, resultar inútil si no informa
+              cuáles están disponibles. La ingeniería de requisitos ayuda a
+              transformar necesidades, restricciones y expectativas en acuerdos
+              que orientan el desarrollo y permiten evaluar sus resultados.
+            </p>
+
+            <p>
+              Un análisis insuficiente repercute en costos, tiempos y funciones inadecuadas. También
+              vincula la calidad del producto con la participación del cliente
+              y del equipo de desarrollo. Por eso, <strong>obtener requerimientos implica comprender el
+              trabajo real, aclarar significados y revisar lo acordado.</strong>
+            </p>
+          </section>
+
+          <section id="conceptos">
+            <p class="section-number">
+              02 / CONCEPTOS ESENCIALES
+            </p>
+
+            <h2>
+              ¿Qué es un requerimiento?
+            </h2>
+
+            <p>
+              Un requerimiento expresa un servicio que debe proporcionar el
+              sistema o una restricción que condiciona su funcionamiento. En
+              este artículo, <em>requisito</em> y <em>requerimiento</em> se
+              utilizan como equivalentes. La ingeniería de requisitos comprende
+              descubrir, analizar, documentar y revisar estas condiciones.
+            </p>
+
+            <div class="callout">
+              <strong>Necesidad ≠ solución predeterminada</strong>
+              <p>
+                «Necesitamos evitar préstamos duplicados» describe un problema.
+                «Necesitamos una aplicación móvil» propone una solución que
+                todavía debe justificarse. Por ello, primero se investiga quién
+                enfrenta el problema, cuándo ocurre y qué resultado espera obtener. 
+                Sin embargo, esto no significa que cualquier urgencia deba convertirse
+                en un requisito. Comprender las necesidades permite formular una solución 
+                justificada que facilite las tareas del usuario. 
+              </p>
+            </div>
+
+            <h3>
+              Dos ejes para clasificar
+            </h3>
+
+            <p>
+              La clasificación de los requerimientos depende del enfoque que 
+              se le tome al sistema y su entorno. Esto permite separar <strong>el qué</strong> debe 
+              hacer el sistema de <strong>él cómo </strong>debe de comportarse, logrando que tanto 
+              los clientes como el equipo técnico puedan comprenderlo.
+            </p>
+
+            <div class="table-wrap" tabindex="0" role="region" aria-label="Tipos de requisitos y ejemplos">
+              <table>
+                <caption>
+                  Clasificación aplicada al ejemplo de biblioteca
+                </caption>
+
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      Clasificación
+                    </th>
+                    <th scope="col">
+                      Qué expresa
+                    </th>
+                    <th scope="col">
+                      Ejemplo didáctico
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      De usuario
+                    </th>
+                    <td>
+                      Necesidad en lenguaje comprensible para quien utiliza el
+                      sistema.
+                    </td>
+                    <td>
+                      Como estudiante, quiero conocer la disponibilidad de un
+                      libro antes de solicitarlo.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      De sistema
+                    </th>
+                    <td>
+                      Comportamiento o condición con suficiente precisión para
+                      su implementación y evaluación.
+                    </td>
+                    <td>
+                      El sistema mostrará el estado de disponibilidad de cada
+                      ejemplar asociado al título consultado.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      Funcional
+                    </th>
+                    <td>
+                      Servicio o respuesta observable.
+                    </td>
+                    <td>
+                      Registrar un préstamo con estudiante, ejemplar y fecha de
+                      devolución.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      No funcional
+                    </th>
+                    <td>
+                      Calidad exigida o restricción de operación.
+                    </td>
+                    <td>
+                      Responder al 95 % de las búsquedas en dos segundos o
+                      menos bajo las condiciones de prueba acordadas.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      Del dominio
+                    </th>
+                    <td>
+                      Regla procedente del contexto de aplicación.
+                    </td>
+                    <td>
+                      En esta biblioteca ficticia, cada estudiante puede
+                      mantener hasta tres préstamos activos.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Además, el origen de los requisitos varía según el producto. En
+              software personalizado se consulta al cliente concreto para conocer que 
+              es lo que desea en específico. En cambio en un producto genérico 
+              se investigan necesidades de una población de
+              usuarios. La clasificación de productos de la lectura ayuda a
+              reconocer esta diferencia.
+              </p>
+          </section>
+
+          <section id="proceso">
+            <p class="section-number">
+              03 / EL PROCESO
+            </p>
+
+            <h2>
+              Obtener, comprender y acordar.
+            </h2>
+
+            <p>
+              La captura aporta información inicial, pero esa información
+              todavía puede contener contradicciones o peticiones imprecisas.
+              Es importante primero reconocer el problema, evaluar y sintetizar,
+              modelar, especificar y revisar. Al poder obtener una concepción primera 
+              junto con el análisis, genera por consecuencia un descubrimiento de su 
+              organización, priorización y negociación.
+              La siguiente ruta integra esos elementos.
+            </p>
+
+            <ol class="steps">
+              <li>
+                <h3>
+                  Preparar y reconocer el problema
+                </h3>
+  
+                <p>
+                  Comprender qué situación se busca resolver, a quiénes afecta y qué
+                  se espera lograr con el software. En esta etapa se define el alcance
+                  inicial y se identifica a las personas que pueden aportar información.
+                </p>
+              </li>
+
+              <li>
+                <h3>
+                  Descubrir y capturar necesidades
+                </h3>
+
+                <p>
+                  Recopilar información sobre lo que los usuarios necesitan y las 
+                  condiciones en las que trabajan. Para ello se utilizan entrevistas, 
+                  observación, revisión de documentos y otras técnicas que permiten 
+                  conocer sus actividades y dificultades.
+                </p>
+              </li>
+
+              <li>
+                <h3>
+                  Analizar, clasificar y modelar
+                </h3>
+
+                <p>
+                  Examinar la información obtenida para aclarar dudas, detectar 
+                  contradicciones y organizar los requerimientos según su tipo. 
+                  También se elaboran diagramas o modelos que ayudan a comprender 
+                  el funcionamiento esperado del sistema.
+                </p>
+              </li>
+
+              <li>
+                <h3>
+                  Priorizar y negociar
+                </h3>
+
+                <p>
+                  Determinar qué requerimientos son más importantes y cuáles pueden 
+                  atenderse después, considerando el tiempo, los recursos y las necesidades 
+                  del proyecto. Cuando existen intereses distintos, se buscan acuerdos 
+                  entre las personas involucradas.
+                </p>
+
+              </li>
+
+              <li>
+                <h3>
+                  Especificar
+                </h3>
+                <p>
+                  Documentar los requerimientos de forma clara y precisa, indicando 
+                  qué debe hacer el sistema y qué restricciones debe cumplir. 
+                  La descripción debe permitir que usuarios y desarrolladores comprendan 
+                  lo mismo y puedan comprobar su cumplimiento.
+                </p>
+              </li>
+
+              <li>
+                <h3>
+                  Revisar y validar
+                </h3>
+
+                <p>
+                  Comprobar con las personas involucradas que los requerimientos 
+                  están completos, son coherentes y representan sus necesidades. 
+                  Si se encuentran errores o aspectos poco claros, se corrigen 
+                  antes de continuar.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section id="tecnicas">
+            <p class="section-number">
+              04 / TÉCNICAS DE OBTENCIÓN
+            </p>
+            <h2>
+              Técnicas para la obtención de requerimientos
+            </h2>
+            <p>
+              Las técnicas de obtención de requerimientos permiten identificar
+              las necesidades de los usuarios, comprender los procesos de
+              trabajo y reconocer las condiciones que debe cumplir el software.
+              Su elección depende del tipo de información que se busca, de las
+              personas involucradas y del contexto del proyecto.
+            </p>
+            <h3>
+              Entrevistas
+            </h3>
+            <p>
+              Consisten en conversaciones planificadas con usuarios, clientes y
+              responsables de los procesos. Permiten conocer sus necesidades,
+              actividades y dificultades, así como aclarar dudas mediante
+              preguntas de seguimiento. Pueden seguir un conjunto de preguntas
+              previamente definido o desarrollarse con mayor flexibilidad según
+              las respuestas.
+            </p>
+            <h3>
+              Lluvia de ideas
+            </h3>
+            <p>
+              Es una técnica grupal que busca reunir distintas perspectivas
+              sobre un problema y generar posibles necesidades o propuestas.
+              Primero se favorece la participación y después se analizan y
+              organizan las ideas. Las propuestas obtenidas deben evaluarse
+              antes de incorporarse como requisitos. Tanto esta técnica como
+              las entrevistas se describen en la lectura de la asignatura.
+            
+            </p>
+            <h3>
+              Observación del trabajo
+            </h3>
+            <p>
+              Consiste en estudiar cómo las personas realizan sus actividades
+              en el entorno donde se utilizará el sistema. Ayuda a identificar
+              tareas, excepciones y prácticas que pueden pasar inadvertidas
+              durante una entrevista. Los hallazgos se contrastan con los
+              participantes para comprender su significado y evitar
+              interpretaciones incorrectas.
+            </p>
+            <h3>
+              Análisis de documentos
+            </h3>
+            <p>
+              Se revisan reglamentos, manuales, formularios, informes y otros
+              registros relacionados con el proceso. Esta técnica permite
+              reconocer reglas de operación, datos utilizados y restricciones
+              que pueden convertirse en requisitos. Es necesario comprobar que
+              los documentos estén vigentes y que correspondan con la práctica
+              actual.
+            </p>
+            <h3>
+              Prototipos
+            </h3>
+            <p>
+              Son representaciones preliminares de las funciones o de la
+              interacción con el sistema. Se utilizan para que los
+              participantes expresen observaciones, aclaren expectativas y
+              detecten necesidades que resultan difíciles de explicar solo con
+              palabras. No requieren ser un producto terminado. 
+            </p>
+          
+          </section>
+          <section id="interaccion">
+            <p class="section-number">
+              05 / INTERACCIÓN Y SECUENCIALIDAD
+            </p>
+            <h2>
+              ¿Cómo se relacionan las etapas?
+            </h2>
+            <p>
+              Las actividades siguen un orden lógico: la información obtenida
+              permite analizar las necesidades; el análisis facilita su
+              organización y negociación; los acuerdos se documentan y después
+              se revisan. Cada actividad utiliza y mejora el trabajo de las
+              anteriores.
+            </p>
+            <figure class="flow">
+              <ol>
+                <li>Descubrimiento<span>Conocer las necesidades</span>
+                </li>
+                <li>Organización<span>Analizar y clasificar</span>
+                </li>
+                <li>Negociación<span>Acordar prioridades</span>
+                </li>
+                <li>Documentación<span>Expresar los requisitos</span>
+                </li>
+              </ol>
+              <div class="return">
+                ↺ La revisión puede llevar a consultar, analizar o acordar
+                nuevamente.
+              </div>
+              <figcaption>
+                Figura 1. Síntesis del ciclo de obtención y análisis presentado
+                en la Lectura 3, p. 8.
+              </figcaption>
+            </figure>
+            <p>
+              Esta secuencia no es rígida. Al documentar puede aparecer una
+              duda que obligue a consultar otra vez al usuario; durante la
+              validación puede detectarse una necesidad que no se había
+              considerado. Por eso, la lectura representa la obtención y el
+              análisis como un proceso en espiral: se vuelve sobre lo trabajado
+              para precisarlo.
+            </p>
+            <h3>
+              La relación entre los propios requisitos
+            </h3>
+            <p>
+              Los requisitos tampoco están aislados. Una función puede depender
+              de otra, y una condición de seguridad o rendimiento puede limitar
+              la forma en que se ofrece un servicio. Si se modifica un
+              requisito, es necesario revisar sus efectos sobre los demás.
+            </p>
+            <p>
+              Para conservar estas relaciones se utiliza la
+              <b>trazabilidad</b>: permite vincular cada requisito con la
+              necesidad que lo originó y con los elementos que lo desarrollan o
+              comprueban. 
+            </p>
+          </section>
+          <section id="calidad">
+            <p class="section-number">
+              06 / CALIDAD DE LOS REQUISITOS
+            </p>
+            <h2>
+              ¿Qué debe tener un requisito bien definido?
+            </h2>
+            <p>
+              Un requisito bien definido debe expresar de forma clara y precisa 
+              qué debe hacer el sistema o qué condición debe cumplir. 
+              Debe incluir la información necesaria para entenderlo, permitir 
+              comprobar su cumplimiento y ser viable con los recursos disponibles. 
+              También debe responder a una necesidad real y no contradecir otros requisitos. 
+              Para facilitar su seguimiento, conviene asignarle un identificador y 
+              registrar su origen y prioridad.
+            </p>
+          </section>
+          <section id="conclusiones">
+            <p class="section-number">
+              07 / CONCLUSIONES Y EXPECTATIVAS
+            </p>
+            <h2>
+              La importancia de comprender y acordar
+            </h2>
+            <p>
+              Los requerimientos dan una dirección al desarrollo del software.
+              Su utilidad depende de que describan necesidades reales y de que
+              las personas involucradas compartan una misma comprensión de lo
+              que se espera del sistema.
+            </p>
+            <p>
+              La obtención, el análisis, la negociación, la especificación y la
+              validación se apoyan entre sí. Aunque tienen una secuencia
+              lógica, es necesario regresar a etapas anteriores cuando surgen
+              dudas o cambios. Revisar a tiempo ayuda a evitar que una
+              interpretación equivocada avance hasta el producto final.
+            </p>
+            <h3>
+              Aportación y expectativas
+            </h3>
+            <p>
+              Una práctica útil es acompañar cada requisito con tres datos: de
+              dónde surge, por qué es necesario y cómo se comprobará. Esto
+              ayuda a mantener el sentido de lo acordado durante el proyecto.
+            </p>
+            <p>
+              Con el estudio de este tema se espera aprender a formular mejores
+              preguntas, distinguir necesidades de propuestas de solución y
+              redactar requisitos claros. El siguiente paso será aplicar estos
+              conocimientos al análisis de un sistema, revisando sus requisitos
+              con quienes conocen el problema.
+            </p>
+          </section>
+          <section id="referencias">
+            <p class="section-number">
+              08 / REFERENCIAS
+            </p>
+            <h2>
+              Fuentes consultadas.
+            </h2>
+            <ol class="references">
+              <li id="ref-lectura">
+                <cite>Ingeniería del software: Unidad 2. Software. Actividad 1.
+                Sesión 3: Tipos</cite>. (s. f.). [Material didáctico, archivo
+                  Lectura_3.pdf].
+              </li>
+              <li id="ref-sebok">Katz, T., Wheatcraft, L., & Ryan, M. (2026, 10
+              de noviembre). Requirements management. En <cite>Guide to the
+              Systems Engineering Body of Knowledge (SEBoK)</cite>. Recuperado
+              el 17 de noviembre de 2026, de <a href="https://sebokwiki.org/wiki/Requirements_Management">https://sebokwiki.org/wiki/Requirements_Management</a>
+              </li>
+              <li id="ref-nasa">National Aeronautics and Space Administration.
+              (2016). <cite>NASA systems engineering handbook</cite> (Rev. 2,
+              NASA/SP-2016-6105). <a href="https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf">
+                https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf</a>
+              </li>
+              <li id="ref-planAsign">
+                <cite>Plan de trabajo: Informática VII (Ingeniería de
+                  Software), modalidad abierta, semestre 2027-1, grupo
+                  9796</cite>. (s. f.). [Plan de asignatura, archivo
+                  1728_2012_9796_SA.pdf]. Facultad de Contaduría y
+                  Administración, Universidad Nacional Autónoma de México. 
+              </li>
+            </ol>
+          </section>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <b>R.</b> Cuaderno de software · Informática VII
+      </p><a href="#inicio">Volver al inicio ↑</a>
+      <p class="small">
+        Actividad académica · Síntesis conceptual del proceso de
+        requerimientos.
+      </p>
+    </footer>
+  </body>
+</html>
